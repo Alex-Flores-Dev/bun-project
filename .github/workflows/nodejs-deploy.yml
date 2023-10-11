@@ -31,7 +31,6 @@ jobs:
             package-lock.json
 
   deployment:
-    needs: testing
     runs-on: ubuntu-latest
     steps:
       - name: Download all workflow run artifacts
