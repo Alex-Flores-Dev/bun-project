@@ -4,6 +4,7 @@ import { MantineProvider, createTheme, rem } from '@mantine/core';
 import FormOne from '../form1/Form1';
 import FormTwo from '../form1/Form2';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import FormThree from '../form1/Form3';
 
 const theme = createTheme({
   shadows: {
@@ -29,6 +30,7 @@ function App() {
           <Routes>
             <Route element={<FormOne/>} exact path="/"/>
             <Route element={<FormTwo/>} exact path="/plan-de-pagos"/>
+            <Route element={<FormThree/>} exact path="/agendar-reunion"/>
             <Route path="/*" element={<FormOne to="/" />} />
           </Routes>
         </Router>
