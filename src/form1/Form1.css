@@ -1,4 +1,6 @@
 .main{
+    min-height: 100vh;
+    min-width: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,5 +8,9 @@
 }
 
 .main-form{
-    width: 50%;
+    width: 30%;
+}
+
+.main-form > *{
+    margin: 20px;
 }

@@ -1,22 +1,21 @@
-import CustomizedList from './Customization';
-import BasicCheckbox from './BasicCheckbox';
-import InputForm from './InputForm';
-import FormButton from './Button';
+import ComboBox from '../common/ComboBox';
+import BasicCheckbox from '../common/BasicCheckbox';
+import InputForm from '../common/InputForm';
+import FormButton from '../common/Button';
 import './Form1.css'
 
 function FormOne() {
   return (
     <div className='main'>
         <div className='main-form'>
-            <InputForm/>
+            <InputForm name="Nombre:"/>
+            <ComboBox/>
             <BasicCheckbox/>
-            <CustomizedList/>
-            <InputForm/>
-            <InputForm/>
-            <InputForm/>
-            <InputForm/>
-            <InputForm/>
-            <FormButton/>
+            <InputForm name="Ingresos Mensuales:"/>
+            <InputForm name="Otros Creditos [Cuota Mensual]:"/>
+            <InputForm name="Precio de lo que se quiere comprar:"/>
+            <InputForm name="Monto a solicitar:"/>
+            <FormButton name="Siguiente"/>
         </div>
     </div>
 

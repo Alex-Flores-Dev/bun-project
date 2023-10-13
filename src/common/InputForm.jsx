@@ -1,12 +1,12 @@
 import { TextInput } from '@mantine/core';
 import classes from './Form1.module.css';
 
-function InputForm() {
+function InputForm(props) {
   return (
     <TextInput
-    placeholder="TextInput component"
-    label="TextInput component"
-    mt="md"
+    placeholder={props.name}
+    label={props.name}
+    mt="xl"
     classNames={classes}
   />
   );

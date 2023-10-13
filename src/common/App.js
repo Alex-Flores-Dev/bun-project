@@ -1,7 +1,9 @@
 import './App.css';
 import '@mantine/core/styles.css';
 import { MantineProvider, createTheme, rem } from '@mantine/core';
-import FormOne from './form1/Form1';
+import FormOne from '../form1/Form1';
+import FormTwo from '../form1/Form2';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 const theme = createTheme({
   shadows: {
@@ -22,7 +24,15 @@ const theme = createTheme({
 function App() {
   return (
     <MantineProvider theme={theme}>
-      <FormOne/>
+      <div>
+        <Router>
+          <Routes>
+            <Route element={<FormOne/>} exact path="/"/>
+            <Route element={<FormTwo/>} exact path="/plan-de-pagos"/>
+            <Route path="/*" element={<FormOne to="/" />} />
+          </Routes>
+        </Router>
+      </div>
     </MantineProvider>
   );
 }
