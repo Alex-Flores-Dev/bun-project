@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bun-project/static/css/main.6cdcc41d.css",
-    "main.js": "/bun-project/static/js/main.42aa8c62.js",
+    "main.css": "/bun-project/static/css/main.a5e45564.css",
+    "main.js": "/bun-project/static/js/main.ad6b191a.js",
     "static/js/787.d732ddce.chunk.js": "/bun-project/static/js/787.d732ddce.chunk.js",
     "index.html": "/bun-project/index.html",
-    "main.6cdcc41d.css.map": "/bun-project/static/css/main.6cdcc41d.css.map",
-    "main.42aa8c62.js.map": "/bun-project/static/js/main.42aa8c62.js.map",
+    "main.a5e45564.css.map": "/bun-project/static/css/main.a5e45564.css.map",
+    "main.ad6b191a.js.map": "/bun-project/static/js/main.ad6b191a.js.map",
     "787.d732ddce.chunk.js.map": "/bun-project/static/js/787.d732ddce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cdcc41d.css",
-    "static/js/main.42aa8c62.js"
+    "static/css/main.a5e45564.css",
+    "static/js/main.ad6b191a.js"
   ]
 }
