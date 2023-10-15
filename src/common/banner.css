@@ -1,0 +1,23 @@
+.input {
+  transition: none;
+
+  &:focus-within {
+    outline: rem(2px) solid var(--mantine-color-blue-filled);
+    border-color: transparent;
+  }
+}
+
+.image-banner{
+  background-image: url(./static/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0% 0% 20% 20%;
+  cursor: help;
+  width: 100%;
+}
+
+.banner-container{
+  margin-top: 78px;
+  box-sizing: border-box;
+}

@@ -24,6 +24,11 @@
   color: white;
 }
 
+.principal{
+  background-color: #ffffff;
+  background-image: url("https://www.bcp.com.bo/Content/images/fourth-pattern-16ad26d8.jpg");
+}
+
 .App-link {
   color: #61dafb;
 }
