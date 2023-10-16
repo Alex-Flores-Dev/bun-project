@@ -30,7 +30,7 @@ function App() {
             <Route element={<FormFour/>} exact path="/seguimiento"/>
             <Route element={<FormFive/>} exact path="/seguimiento-cliente"/>
             <Route element={<FormSix/>} exact path="/revisar-solicitudes"/>
-            <Route path="/*" element={<FormOne to="/" />} />
+            <Route path="/*" element={<Main to="/" />} />
           </Routes>
         </Router>
       </div>
