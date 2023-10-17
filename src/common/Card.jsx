@@ -1,7 +1,7 @@
 import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 
-export default function CardInfo() {
+export default function CardInfo(props) {
   const navigate = useNavigate();
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
@@ -14,9 +14,9 @@ export default function CardInfo() {
       </Card.Section>
 
       <Group justify="space-between" mt="md" mb="xs">
-        <Text fw={500}>Norway Fjord Adventures</Text>
+        <Text fw={500}>{props.name}</Text>
         <Badge color="pink" variant="light">
-          On Sale
+          mas
         </Badge>
       </Group>
 

@@ -1,11 +1,11 @@
 import { Select } from '@mantine/core';
 
-export default function ComboBox() {
+export default function ComboBox(props) {
   return (
     <Select
-      label="Tipo de Credito"
+      label={props.title}
       placeholder="Seleccione"
-      data={['Producto A', 'Producto B', 'Producto C', 'Producto D']}
+      data={props.data}
     />
   );
 }

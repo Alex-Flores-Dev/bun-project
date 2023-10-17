@@ -8,13 +8,13 @@ function FormOne() {
   return (
     <div className='main'>
         <div className='main-form'>
-            <InputForm name="Nombre:"/>
-            <ComboBox/>
+            <InputForm name="Nombre y Apellido:"/>
+            <ComboBox data={['UNICASA (Crédito de vivienda)', 'UNIAUTO (Crédito vehicular)', 'UNICRÉDITO (Crédito consumo)']}/>
             <BasicCheckbox/>
-            <InputForm name="Ingresos Mensuales:"/>
-            <InputForm name="Otros Creditos [Cuota Mensual]:"/>
-            <InputForm name="Precio de lo que se quiere comprar:"/>
-            <InputForm name="Monto a solicitar:"/>
+            <InputForm name="Ingresos Mensuales [Bs]:"/>
+            <InputForm name="Otros Creditos [Cuota Mensual Bs]:"/>
+            <InputForm name="Precio de lo que se quiere comprar [Bs]:"/>
+            <InputForm name="Monto a solicitar [Bs]:"/>
             <FormButton name="Siguiente"/>
         </div>
     </div>

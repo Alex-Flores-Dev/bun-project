@@ -4,7 +4,7 @@ import { IconHeart } from '@tabler/icons-react'
 
 
 function Main() {
-    const elm = [1,2,3,4,5,6]
+    const elm = ["UNICASA (Crédito de vivienda)","UNIAUTO (Crédito vehicular)" ,"UNICRÉDITO (Crédito consumo)"]
     const icon = <IconHeart />;
 
     return ( 
@@ -27,7 +27,7 @@ function Main() {
 
             <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
                 <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap',justifyContent:'center', width:'80%'}}>
-                    {elm.map(element => {return <div style={{width:'400px', margin:'20px'}}><CardInfo/></div>})}
+                    {elm.map(element => {return <div style={{width:'400px', margin:'20px'}}><CardInfo name={element}/></div>})}
                 </div>
             </div>
             <div style={{display:'flex', justifyContent:'center'}}>
