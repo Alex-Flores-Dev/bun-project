@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/bun-project/static/css/main.c33cbf5a.css",
-    "main.js": "/bun-project/static/js/main.b2156a90.js",
+    "main.js": "/bun-project/static/js/main.8dd36ff2.js",
     "static/js/787.d732ddce.chunk.js": "/bun-project/static/js/787.d732ddce.chunk.js",
     "static/media/banner.jpg": "/bun-project/static/media/banner.80652765c9a7e9a556a2.jpg",
     "index.html": "/bun-project/index.html",
     "main.c33cbf5a.css.map": "/bun-project/static/css/main.c33cbf5a.css.map",
-    "main.b2156a90.js.map": "/bun-project/static/js/main.b2156a90.js.map",
+    "main.8dd36ff2.js.map": "/bun-project/static/js/main.8dd36ff2.js.map",
     "787.d732ddce.chunk.js.map": "/bun-project/static/js/787.d732ddce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c33cbf5a.css",
-    "static/js/main.b2156a90.js"
+    "static/js/main.8dd36ff2.js"
   ]
 }
