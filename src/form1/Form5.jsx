@@ -1,10 +1,12 @@
 import { DateTimePicker } from '@mantine/dates';
-import { Textarea } from '@mantine/core';
+import { Textarea, Button } from '@mantine/core';
 import CardInfo from '../common/Card';
 import InputForm from '../common/InputForm';
 import TimeLine from '../common/TimeLine'
+import { useNavigate } from 'react-router-dom';
 
 function FormFive() {
+    const navigate = useNavigate();
     return ( 
         <div className='main'>
             <div className='main-form'>
@@ -16,6 +18,7 @@ function FormFive() {
                     description="(Opcional en caso de dudas)"
                     placeholder="Escribenos..."
                 />
+                <Button variant="filled" onClick={()=>navigate('/revisar-solicitudes')}>Mis Solicitudes</Button>
                 <CardInfo/>
             </div>
         </div>
