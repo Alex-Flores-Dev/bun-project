@@ -4,7 +4,7 @@ export default function BasicCheckbox() {
   return (
     <Checkbox.Group
       defaultValue={['react']}
-      label="Dependiente"
+      label="Trabajo Dependiente"
       description="Es usted dependiente?"
     >
       <Group mt="xs">

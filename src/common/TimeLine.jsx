@@ -6,7 +6,7 @@ export default function TimeLine() {
     <Timeline active={3} bulletSize={24} lineWidth={3}>
       <Timeline.Item bullet={<IconGitBranch size={12} />} title="Solicitud">
         <Text c="dimmed" size="sm"> <Text variant="link" component="span" inherit></Text></Text>
-        <Text size="xs" mt={4}>Ultima actualizacion (2 hours ago)2 hours ago)</Text>
+        <Text size="xs" mt={4}>Ultima actualizacion (2 hours ago)</Text>
       </Timeline.Item>
 
       <Timeline.Item bullet={<IconGitCommit size={12} />} title="Evaluacion">

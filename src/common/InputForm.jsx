@@ -5,7 +5,7 @@ function InputForm(props) {
     <TextInput
     placeholder={props.name}
     label={props.name}
-    mt="xl"
+    mt={props.mt}
     value={props.money}
     pointer='false'
   />
