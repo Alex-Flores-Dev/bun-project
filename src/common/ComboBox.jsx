@@ -6,6 +6,7 @@ export default function ComboBox(props) {
       label={props.title}
       placeholder="Seleccione"
       data={props.data}
+      onChange={(value)=>props.funct(value)}
     />
   );
 }
