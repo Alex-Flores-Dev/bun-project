@@ -1,4 +1,4 @@
-import { Chip, Avatar,Button  } from '@mantine/core';
+import { Chip, Avatar,Button,Image  } from '@mantine/core';
 import InputForm from '../common/InputForm';
 import ActionButton from '../common/ActionButton';
 import { useDisclosure } from '@mantine/hooks';
@@ -6,6 +6,7 @@ import { Modal } from '@mantine/core';
 import TableForm from '../common/TableForm';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import qr from '../common/static/qr.jpeg'
 
 function FormSeven() {
     const [opened, { open, close }] = useDisclosure(false);
@@ -39,10 +40,19 @@ function FormSeven() {
                 <div onClick={()=>{open();setName('Simulador de pagos adelantados');}}>
                 <ActionButton buttonName='Simulador de pagos adelantados' icon="receipt"/>
                 </div>
+                <div onClick={()=>{open();setName('Realizar pago de la cuota mensual por QR');}}>
+                <ActionButton buttonName='Realizar pago de la cuota mensual por QR' icon="receipt"/>
+                </div>
             </div>
             
             <Modal opened={opened} onClose={close} title={name} centered size="xm">
-                <TableForm/>
+                {name==='Realizar pago de la cuota mensual por QR'?    <Image
+                    radius="md"
+                    h={400}
+                    w="auto"
+                    fit="contain"
+                    src={qr}
+                    />:<TableForm/>}
             </Modal>
         </div>
      );
