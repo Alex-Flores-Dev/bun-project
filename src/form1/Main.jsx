@@ -7,7 +7,7 @@ import Three from '../common/static/3.jpeg'
 
 function Main() {
     const elm = [
-        {prod:"UNICASA (Crédito de vivienda)", image:One},{prod:"UNIAUTO (Crédito vehicular)", image:Two},{prod:"UNICRÉDITO (Crédito consumo)", image:Three}]
+        {prod:"UNICASA (Crédito de vivienda)", image:Two},{prod:"UNIAUTO (Crédito vehicular)", image:Three},{prod:"UNICRÉDITO (Crédito consumo)", image:One}]
     const icon = <IconHeart />;
 
     return ( 
