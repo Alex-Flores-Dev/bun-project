@@ -15,11 +15,10 @@ function FormEight() {
         <div className='main'>
             <div className='main-form'>
             <div style={{display:'flex', justifyContent:'center'}}>
-                <Avatar color="cyan"  size="xl" radius="xl">MK</Avatar>
-
+                <Avatar color="cyan"  size="xl" radius="xl"/>
             </div>
             <div style={{display:'flex', justifyContent:'center'}}>
-                <Chip defaultChecked variant="outline" size="xl">Welcome, Alex!</Chip>
+                <Chip defaultChecked variant="outline" size="xl">Bienvenido Alex!</Chip>
 
             </div>
             <div>
