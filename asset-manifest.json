@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/bun-project/static/css/main.c33cbf5a.css",
-    "main.js": "/bun-project/static/js/main.7d84775e.js",
+    "main.css": "/bun-project/static/css/main.df178bd5.css",
+    "main.js": "/bun-project/static/js/main.c1d89ad3.js",
     "static/js/787.d732ddce.chunk.js": "/bun-project/static/js/787.d732ddce.chunk.js",
-    "static/media/banner.jpg": "/bun-project/static/media/banner.80652765c9a7e9a556a2.jpg",
+    "static/media/1.jpeg": "/bun-project/static/media/1.d2084ff3c775e561edcc.jpeg",
+    "static/media/banner.jpg": "/bun-project/static/media/banner.88d3ab45259ffaea4660.jpg",
+    "static/media/3.jpeg": "/bun-project/static/media/3.eb5d5c6ec1ba169da4da.jpeg",
+    "static/media/2.jpeg": "/bun-project/static/media/2.e9995181a32b76c63900.jpeg",
     "index.html": "/bun-project/index.html",
-    "main.c33cbf5a.css.map": "/bun-project/static/css/main.c33cbf5a.css.map",
-    "main.7d84775e.js.map": "/bun-project/static/js/main.7d84775e.js.map",
+    "main.df178bd5.css.map": "/bun-project/static/css/main.df178bd5.css.map",
+    "main.c1d89ad3.js.map": "/bun-project/static/js/main.c1d89ad3.js.map",
     "787.d732ddce.chunk.js.map": "/bun-project/static/js/787.d732ddce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c33cbf5a.css",
-    "static/js/main.7d84775e.js"
+    "static/css/main.df178bd5.css",
+    "static/js/main.c1d89ad3.js"
   ]
 }
