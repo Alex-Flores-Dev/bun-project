@@ -1,4 +1,4 @@
-import { Chip, Avatar,Button,Image  } from '@mantine/core';
+import { Chip, Avatar,Image  } from '@mantine/core';
 import InputForm from '../common/InputForm';
 import ActionButton from '../common/ActionButton';
 import { useDisclosure } from '@mantine/hooks';
@@ -27,17 +27,18 @@ function FormSeven() {
             <InputForm name="Nro. De cuotas pagadas:" money='15'/>
             <InputForm name="Nro. De cuotas por pagar:" money='20'/>
             <InputForm name="Saldo Adeudado [Bs]:" money='20000'/>
-            <InputForm name="Fecha de la Proxima Cuota:" money='11/10/2023'/>
+            <InputForm name="Fecha de la Próxima Cuota:" money='11/10/2023'/>
             </div>
-            <Button style={{width:'20%'}} variant="filled" onClick={()=>navigate('/amortizacion')} color="orange">Simulador</Button>
+            {/* <Button style={{width:'20%'}} variant="filled" onClick={()=>navigate('/amortizacion')} color="orange">Simulador</Button> */}
             <div style={{display:'flex', flexDirection:'row'}}>
-                <div onClick={()=>{open();setName('Plan de Pagos');}}>
+                {/* <div onClick={()=>{open();setName('Plan de Pagos');}}> */}
+                <div onClick={()=>navigate('/amortizacion')}>
                     <ActionButton buttonName='Generar plan de pagos' icon="receipt"/>
                 </div>
-                <div onClick={()=>{open();setName('Plan de Pagos Adelantado');}}>
+                <div onClick={()=>navigate('/amortizacion')}>
                 <ActionButton buttonName='Pagos efectuados(Historico)'/>
                 </div>
-                <div onClick={()=>{open();setName('Simulador de pagos adelantados');}}>
+                <div onClick={()=>navigate('/amortizacion')}>
                 <ActionButton buttonName='Simulador de pagos adelantados' icon="receipt"/>
                 </div>
                 <div onClick={()=>{open();setName('Realizar pago de la cuota mensual por QR');}}>

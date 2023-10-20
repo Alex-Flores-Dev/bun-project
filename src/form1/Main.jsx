@@ -7,7 +7,10 @@ import Three from '../common/static/3.jpeg'
 
 function Main() {
     const elm = [
-        {prod:"UNICASA (Crédito de vivienda)", image:Two},{prod:"UNIAUTO (Crédito vehicular)", image:Three},{prod:"UNICRÉDITO (Crédito consumo)", image:One}]
+        {prod:"UNICASA (Crédito de vivienda)", image:Two, 
+        detail:"Crédito destinado para la compra de vivienda, departamento y terreno para mejoramiento, refacción, remodelación, ampliación de una vivienda Unifamiliar de Interés Social sin fines comerciales." },{
+        prod:"UNIAUTO (Crédito vehicular)", image:Three, detail:"Crédito destinado a la compra o adquisición de vehículos nuevos o usados con garantía prendaria del vehículo, los cuales cuentan con póliza contra todo riesgo."},
+        {prod:"UNICRÉDITO (Crédito consumo)", image:One, detail:"Crédito destinado a la libre disponibilidad para satisfacer tus necesidades inmediatas como viajes, compras, estudios, salud, etc."}]
     const icon = <IconHeart />;
 
     return ( 
@@ -30,7 +33,7 @@ function Main() {
 
             <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
                 <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap',justifyContent:'center', width:'80%'}}>
-                    {elm.map(element => {return <div style={{width:'400px', margin:'20px'}}><CardInfo name={element.prod} image={element.image}/></div>})}
+                    {elm.map(element => {return <div style={{width:'400px', margin:'20px'}}><CardInfo name={element.prod} image={element.image} detail={element.detail}/></div>})}
                 </div>
             </div>
             <div style={{display:'flex', justifyContent:'center'}}>

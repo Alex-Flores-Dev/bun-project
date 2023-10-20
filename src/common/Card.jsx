@@ -21,8 +21,7 @@ export default function CardInfo(props) {
       </Group>
 
       <Text size="sm" c="dimmed">
-        With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-        activities on and around the fjords of Norway
+        {props.detail}
       </Text>
 
       <Button variant="light" color="blue" fullWidth mt="md" radius="md" onClick={()=>navigate('/solicitud')}>
