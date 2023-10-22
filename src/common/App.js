@@ -5,11 +5,9 @@ import FormOne from '../form1/Form1';
 import FormTwo from '../form1/Form2';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import FormFour from '../form1/Form4';
-import FormFive from '../form1/Form5';
 import FormSix from '../form1/Form6';
 import NavBar from './NavBar';
 import Banner from './Banner';
-import Main from '../form1/Main';
 import FormSeven from '../form1/Form7';
 import FormEight from '../form1/Form8';
 
@@ -21,15 +19,15 @@ function App() {
         <Banner/>
         <Router>
           <Routes>
-            <Route element={<Main/>} exact path="/"/>
+            {/* <Route element={<Main/>} exact path="/"/> */}
             <Route element={<FormOne/>} exact path="/solicitud"/>
             <Route element={<FormTwo/>} exact path="/pagos"/>
             <Route element={<FormFour/>} exact path="/seguimiento"/>
-            <Route element={<FormFive/>} exact path="/seguimiento-cliente"/>
+            {/* <Route element={<FormFive/>} exact path="/seguimiento-cliente"/> */}
             <Route element={<FormSix/>} exact path="/revisar-solicitudes"/>
             <Route element={<FormSeven/>} exact path="/plan-de-pagos"/>
             <Route element={<FormEight/>} exact path="/amortizacion"/>
-            <Route path="/*" element={<Main to="/" />} />
+            <Route path="/*" element={<FormOne to="/" />} />
           </Routes>
         </Router>
       </div>

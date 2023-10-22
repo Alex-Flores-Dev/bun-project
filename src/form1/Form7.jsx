@@ -14,23 +14,22 @@ function FormSeven() {
     const navigate = useNavigate();
     
     return ( 
-        <div className='main'>
-            <div className='main-form'>
-            <div style={{display:'flex', justifyContent:'center'}}>
-                <Avatar color="cyan"  size="xl" radius="xl"/>
-            </div>
-            <div style={{display:'flex', justifyContent:'center'}}>
-                <Chip defaultChecked variant="outline" size="xl">Bienvenido Alex!</Chip>
+        <div className='main-side' style={{justifyContent:'center'}}>
+            <div className='x-main-form'>
+                <div style={{display:'flex', justifyContent:'center'}}>
+                    <Avatar color="cyan"  size="xl" radius="xl"/>
+                </div>
+                <div style={{display:'flex', justifyContent:'center'}}>
+                    <Chip defaultChecked variant="outline" size="xl">Bienvenido Alex!</Chip>
 
+                </div>
+                <InputForm name="Monto Desembolsado [Bs]:" money='45000'/>
+                <InputForm name="Nro. De cuotas pagadas:" money='15'/>
+                <InputForm name="Nro. De cuotas por pagar:" money='20'/>
+                <InputForm name="Saldo Adeudado [Bs]:" money='20000'/>
+                <InputForm name="Fecha de la Próxima Cuota:" money='11/10/2023'/>
             </div>
-            <InputForm name="Monto Desembolsado [Bs]:" money='45000'/>
-            <InputForm name="Nro. De cuotas pagadas:" money='15'/>
-            <InputForm name="Nro. De cuotas por pagar:" money='20'/>
-            <InputForm name="Saldo Adeudado [Bs]:" money='20000'/>
-            <InputForm name="Fecha de la Próxima Cuota:" money='11/10/2023'/>
-            </div>
-            {/* <Button style={{width:'20%'}} variant="filled" onClick={()=>navigate('/amortizacion')} color="orange">Simulador</Button> */}
-            <div style={{display:'flex', flexDirection:'row'}}>
+            <div style={{display:'flex', flexDirection:'column'}}>
                 {/* <div onClick={()=>{open();setName('Plan de Pagos');}}> */}
                 <div onClick={()=>navigate('/amortizacion')}>
                     <ActionButton buttonName='Generar plan de pagos' icon="receipt"/>

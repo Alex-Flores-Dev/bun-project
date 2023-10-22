@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 export default function CardInfo(props) {
   const navigate = useNavigate();
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder>
+    <Card shadow="xs" padding="lg" radius="md" withBorder>
       <Card.Section>
         <Image
           src={props.image}
-          height={160}
+          height={75}
           alt="Norway"
         />
       </Card.Section>
@@ -20,7 +20,7 @@ export default function CardInfo(props) {
         </Badge>
       </Group>
 
-      <Text size="sm" c="dimmed">
+      <Text size="xs" c="dimmed">
         {props.detail}
       </Text>
 

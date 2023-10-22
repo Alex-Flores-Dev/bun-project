@@ -37,10 +37,12 @@ function Main() {
                 </div>
             </div>
             <div style={{display:'flex', justifyContent:'center'}}>
-            <div style={{width:'30%'}}>
-            <Alert title="Solicita tu credito en linea" icon={icon} withCloseButton={false}>
-                    Bancounion.com.bo
-            </Alert></div></div>
+                <div style={{width:'30%'}}>
+                    <Alert title="Solicita tu credito en linea" icon={icon} withCloseButton={false}>
+                            Bancounion.com.bo
+                    </Alert>
+                </div>
+            </div>
         </>
      );
 }
