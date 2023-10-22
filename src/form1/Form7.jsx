@@ -7,6 +7,7 @@ import TableForm from '../common/TableForm';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import qr from '../common/static/qr.jpeg'
+import TableHistoric from '../common/TableHistoric';
 
 function FormSeven() {
     const [opened, { open, close }] = useDisclosure(false);
@@ -31,10 +32,11 @@ function FormSeven() {
             </div>
             <div style={{display:'flex', flexDirection:'column'}}>
                 {/* <div onClick={()=>{open();setName('Plan de Pagos');}}> */}
-                <div onClick={()=>navigate('/amortizacion')}>
+                {/* <div onClick={()=>navigate('/amortizacion')}> */}
+                <div onClick={()=>{open();setName('Plan de Pagos');}}> 
                     <ActionButton buttonName='Generar plan de pagos' icon="receipt"/>
                 </div>
-                <div onClick={()=>navigate('/amortizacion')}>
+                <div onClick={()=>{open();setName('historico')}}>
                 <ActionButton buttonName='Pagos efectuados(Historico)'/>
                 </div>
                 <div onClick={()=>navigate('/amortizacion')}>
@@ -44,17 +46,26 @@ function FormSeven() {
                 <ActionButton buttonName='Realizar pago de la cuota mensual por QR' icon="receipt"/>
                 </div>
             </div>
-            
-            <Modal opened={opened} onClose={close} title={name} centered size="xm">
-                {name==='Realizar pago de la cuota mensual por QR'?    <Image
-                    radius="md"
-                    h={400}
-                    w="auto"
-                    fit="contain"
-                    src={qr}
-                    />:<TableForm/>}
-            </Modal>
-        </div>
+            {name==="historico"?            
+                    <Modal opened={opened} onClose={close} title={name} centered size="xm">
+                        {name==='Realizar pago de la cuota mensual por QR'?    <Image
+                            radius="md"
+                            h={400}
+                            w="auto"
+                            fit="contain"
+                            src={qr}
+                            />:<TableHistoric/>}
+                    </Modal>:
+                        <Modal opened={opened} onClose={close} title={name} centered size="xm">
+                        {name==='Realizar pago de la cuota mensual por QR'?    <Image
+                            radius="md"
+                            h={400}
+                            w="auto"
+                            fit="contain"
+                            src={qr}
+                            />:<TableForm/>}
+                    </Modal>}
+            </div>
      );
 }
 
