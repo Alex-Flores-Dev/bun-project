@@ -24,7 +24,7 @@ function FormTwo() {
                     <div className='main-form side-one'>
                         <Text size="ms">Tienes dudas?... Puedes agendar una cita con uno de nuestros asesores de credito</Text>
                         <ComboBox title="Departamento" data={['La Paz', 'Cochabamba', 'Santa Cruz']}/>
-                        <ComboBox title="Agencia" data={['Oficina Nacional', 'Agencia Central', 'Oficina Departamental']}/>
+                        <ComboBox title="Agencia" data={['Agencia San Miguel', 'Agencia Camacho', 'Agencia 6 de Marzo']}/>
                         <Text size="xs" style={{margin:'0px 20px'}}>Tienes alguna duda?...</Text>
                         <Button variant="filled" onClick={redirectToGoogle}>Agendar Reunion</Button>
                         <Button variant="filled" onClick={()=>navigate('/seguimiento')}>Siguiente Pagina</Button>
