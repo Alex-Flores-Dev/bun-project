@@ -6,17 +6,17 @@ export default function TimeLine() {
     <Timeline active={3} bulletSize={24} lineWidth={3}>
       <Timeline.Item bullet={<IconGitBranch size={12} />} title="Solicitud">
         <Text c="dimmed" size="sm"> <Text variant="link" component="span" inherit></Text></Text>
-        <Text size="xs" mt={4}>Ultima actualizacion (2 hours ago)</Text>
+        <Text size="xs" mt={4}>Ultima actualización (2 hours ago)</Text>
       </Timeline.Item>
 
-      <Timeline.Item bullet={<IconGitCommit size={12} />} title="Evaluacion">
+      <Timeline.Item bullet={<IconGitCommit size={12} />} title="Evaluación">
         <Text c="dimmed" size="sm"><Text variant="link" component="span" inherit></Text></Text>
-        <Text size="xs" mt={4}>Ultima actualizacion (52 minutes ago)</Text>
+        <Text size="xs" mt={4}>Ultima actualización (52 minutes ago)</Text>
       </Timeline.Item>
 
-      <Timeline.Item title="Aprobacion" bullet={<IconGitPullRequest size={12} />} lineVariant="dashed">
+      <Timeline.Item title="Aprobación" bullet={<IconGitPullRequest size={12} />} lineVariant="dashed">
         <Text c="dimmed" size="sm"><Text variant="link" component="span" inherit></Text></Text>
-        <Text size="xs" mt={4}>Ultima actualizacion (34 minutes ago)</Text>
+        <Text size="xs" mt={4}>Ultima actualización (34 minutes ago)</Text>
       </Timeline.Item>
 
       <Timeline.Item title="Firma de Contrato" bullet={<IconMessageDots size={12} lineVariant="dashed"/>}>

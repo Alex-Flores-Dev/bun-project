@@ -20,10 +20,10 @@ function FormSix() {
                     Una tarjeta pensada para ti 🔥
                 </Notification>
                 <div onClick={()=>navigate('/plan-de-pagos')}>
-                <BlockNotify name="Nro de Credito : 156151321" title="Crédito Hipotecario" detail="Saldo: 450000 Bs"/>
+                <BlockNotify name="Nro de Crédito : 156151321" title="Crédito Hipotecario" detail="Saldo: 450000 Bs"/>
                 </div>
                 <div onClick={()=>navigate('/plan-de-pagos')}>
-                <BlockNotify name="Nro de Credito : 152132215" title="Crédito Vehicular" detail="Saldo: 70000 Bs"/>
+                <BlockNotify name="Nro de Crédito : 152132215" title="Crédito Vehicular" detail="Saldo: 70000 Bs"/>
                 </div>
             </div>
         </div>

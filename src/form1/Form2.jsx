@@ -1,14 +1,14 @@
 import InputForm from '../common/InputForm';
 import ModalForm from '../common/ModalForm';
-import { Button,Text,Image } from '@mantine/core';
+import { Button,Text,Image, Modal } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 import ComboBox from '../common/ComboBox';
+import agenda from '../common/static/agenda.jpeg'
+import { useDisclosure } from '@mantine/hooks';
 
 function FormTwo() {
     const navigate = useNavigate();
-    const redirectToGoogle = () => {
-        window.open('https://calendly.com/', '_blank').focus();
-      };
+    const [opened, { open, close }] = useDisclosure(false);
     return ( 
         <div>
             <div className='main-order'>
@@ -26,10 +26,17 @@ function FormTwo() {
                         <ComboBox title="Departamento" data={['La Paz', 'Cochabamba', 'Santa Cruz']}/>
                         <ComboBox title="Agencia" data={['Agencia San Miguel', 'Agencia Camacho', 'Agencia 6 de Marzo']}/>
                         <Text size="xs" style={{margin:'0px 20px'}}>Tienes alguna duda?...</Text>
-                        <Button variant="filled" onClick={redirectToGoogle}>Agendar Reunion</Button>
+                        <Button variant="filled" onClick={open}>Agendar Reunion</Button>
                         <Button variant="filled" onClick={()=>navigate('/seguimiento')}>Siguiente Pagina</Button>
                     </div>
 
+                    <Modal opened={opened} onClose={close} title="Agendar Reunion"  centered size="70%" >
+                    <Image
+                        radius="md"
+                        h={600}
+                        src={agenda}
+                    />
+                    </Modal>
                 </div>
             </div>
             <div style={{display: 'flex', justifyContent:'center'}}>

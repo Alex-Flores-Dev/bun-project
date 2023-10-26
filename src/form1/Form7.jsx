@@ -35,16 +35,16 @@ function FormSeven() {
                 {/* <div onClick={()=>{open();setName('Plan de Pagos');}}> */}
                 {/* <div onClick={()=>navigate('/amortizacion')}> */}
                 <div onClick={()=>{open();setName('Plan de Pagos');}}> 
-                    <ActionButton buttonName='Generar plan de pagos' icon="receipt"/>
+                    <ActionButton buttonName='Generar plan de pagos' icon="1"/>
                 </div>
                 <div onClick={()=>{open();setName('historico')}}>
-                <ActionButton buttonName='Pagos efectuados(Historico)'/>
+                <ActionButton buttonName='Pagos efectuados(Historico)' icon="2"/>
                 </div>
                 <div onClick={()=>navigate('/amortizacion')}>
-                <ActionButton buttonName='Simulador de pagos adelantados' icon="receipt"/>
+                <ActionButton buttonName='Simulador de pagos adelantados' icon="3"/>
                 </div>
                 <div onClick={()=>{open();setName('Realizar pago de la cuota mensual por QR');}}>
-                <ActionButton buttonName='Realizar pago de la cuota mensual por QR' icon="receipt"/>
+                <ActionButton buttonName='Realizar pago de la cuota mensual por QR' icon="4"/>
                 </div>
             </div>
             {name==="historico"?            
