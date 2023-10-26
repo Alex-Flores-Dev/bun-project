@@ -15,9 +15,9 @@ function FormFive() {
                 <InputForm name="Fecha de Inicio:" money='18/10/2023'/>
                 <TimeLine/>
                 <Textarea
-                    label="Buzon de Mensajes "
+                    label="Buzón de Mensajes "
                     description="(Opcional en caso de dudas)"
-                    placeholder="Escribenos..."
+                    placeholder="Escríbenos..."
                 />
                 <Button variant="filled" onClick={toggle} >Enviar Mensaje</Button>
                 <Button variant="filled" onClick={()=>navigate('/revisar-solicitudes')}>Mis Solicitudes</Button>

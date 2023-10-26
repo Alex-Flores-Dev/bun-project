@@ -38,7 +38,7 @@ function FormSeven() {
                     <ActionButton buttonName='Generar plan de pagos' icon="1"/>
                 </div>
                 <div onClick={()=>{open();setName('historico')}}>
-                <ActionButton buttonName='Pagos efectuados(Historico)' icon="2"/>
+                <ActionButton buttonName='Pagos efectuados(Histórico)' icon="2"/>
                 </div>
                 <div onClick={()=>navigate('/amortizacion')}>
                 <ActionButton buttonName='Simulador de pagos adelantados' icon="3"/>

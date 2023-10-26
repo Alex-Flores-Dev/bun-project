@@ -27,10 +27,10 @@ function FormTwo() {
                         <ComboBox title="Agencia" data={['Agencia San Miguel', 'Agencia Camacho', 'Agencia 6 de Marzo']}/>
                         <Text size="xs" style={{margin:'0px 20px'}}>Tienes alguna duda?...</Text>
                         <Button variant="filled" onClick={open}>Agendar Reunion</Button>
-                        <Button variant="filled" onClick={()=>navigate('/seguimiento')}>Siguiente Pagina</Button>
+                        <Button variant="filled" onClick={()=>navigate('/seguimiento')}>Siguiente Página</Button>
                     </div>
 
-                    <Modal opened={opened} onClose={close} title="Agendar Reunion"  centered size="70%" >
+                    <Modal opened={opened} onClose={close} title="Agendar Reunión"  centered size="70%" >
                     <Image
                         radius="md"
                         h={600}

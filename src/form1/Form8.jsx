@@ -23,7 +23,7 @@ function FormEight() {
 
             </div>
             <div>
-            <InputForm name="Cuanto quieres amortizar? [Bs]:"/>
+            <InputForm name="Cuánto quieres amortizar? [Bs]:"/>
             <ComboBox data={['Reducción del Plazo', 'Reducción de la Cuota']} title='Tipo de Beneficio' funct={funcChange}/>
             </div>
             {change?<div>
