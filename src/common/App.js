@@ -10,6 +10,7 @@ import NavBar from './NavBar';
 import Banner from './Banner';
 import FormSeven from '../form1/Form7';
 import FormEight from '../form1/Form8';
+import FormFive from '../form1/Form5';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <Route element={<FormOne/>} exact path="/solicitud"/>
             <Route element={<FormTwo/>} exact path="/pagos"/>
             <Route element={<FormFour/>} exact path="/seguimiento"/>
-            {/* <Route element={<FormFive/>} exact path="/seguimiento-cliente"/> */}
+            <Route element={<FormFive/>} exact path="/seguimiento-cliente"/>
             <Route element={<FormSix/>} exact path="/revisar-solicitudes"/>
             <Route element={<FormSeven/>} exact path="/plan-de-pagos"/>
             <Route element={<FormEight/>} exact path="/amortizacion"/>

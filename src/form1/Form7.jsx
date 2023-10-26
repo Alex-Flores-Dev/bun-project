@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import qr from '../common/static/qr.jpeg'
 import TableHistoric from '../common/TableHistoric';
+import person from '../common/static/person1.jpeg'
 
 function FormSeven() {
     const [opened, { open, close }] = useDisclosure(false);
@@ -15,10 +16,10 @@ function FormSeven() {
     const navigate = useNavigate();
     
     return ( 
-        <div className='main-side' style={{justifyContent:'center'}}>
+        <div className='main' style={{justifyContent:'center'}}>
             <div className='x-main-form'>
                 <div style={{display:'flex', justifyContent:'center'}}>
-                    <Avatar color="cyan"  size="xl" radius="xl"/>
+                    <Avatar color="cyan" src={person}  size="xl" radius="xl"/>
                 </div>
                 <div style={{display:'flex', justifyContent:'center'}}>
                     <Chip defaultChecked variant="outline" size="xl">Bienvenido Alex!</Chip>
@@ -30,7 +31,7 @@ function FormSeven() {
                 <InputForm name="Saldo Adeudado [Bs]:" money='20000'/>
                 <InputForm name="Fecha de la Próxima Cuota:" money='11/10/2023'/>
             </div>
-            <div style={{display:'flex', flexDirection:'column'}}>
+            <div style={{display:'flex', flexDirection:'row'}}>
                 {/* <div onClick={()=>{open();setName('Plan de Pagos');}}> */}
                 {/* <div onClick={()=>navigate('/amortizacion')}> */}
                 <div onClick={()=>{open();setName('Plan de Pagos');}}> 

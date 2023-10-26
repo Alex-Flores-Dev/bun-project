@@ -3,6 +3,7 @@ import InputForm from '../common/InputForm';
 import TableForm from '../common/TableForm';
 import { useState } from 'react';
 import ComboBox from '../common/ComboBox';
+import person from '../common/static/person1.jpeg'
 
 function FormEight() {
     const [change,setChange] = useState('');
@@ -15,7 +16,7 @@ function FormEight() {
         <div className='main'>
             <div className='main-form'>
             <div style={{display:'flex', justifyContent:'center'}}>
-                <Avatar color="cyan"  size="xl" radius="xl"/>
+                <Avatar color="cyan" src={person}  size="xl" radius="xl"/>
             </div>
             <div style={{display:'flex', justifyContent:'center'}}>
                 <Chip defaultChecked variant="outline" size="xl">Bienvenido Alex!</Chip>

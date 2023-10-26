@@ -8,7 +8,7 @@ export default function CardInfo(props) {
       <Card.Section>
         <Image
           src={props.image}
-          height={75}
+          height={160}
           alt="Norway"
         />
       </Card.Section>

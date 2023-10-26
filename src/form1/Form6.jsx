@@ -1,6 +1,7 @@
 import { Notification, Chip, Avatar  } from '@mantine/core';
 import BlockNotify from '../common/BlockNotify';
 import { useNavigate } from 'react-router-dom';
+import person from '../common/static/person1.jpeg'
 
 function FormSix() {
     const navigate = useNavigate();
@@ -8,7 +9,7 @@ function FormSix() {
         <div className='main'>
             <div className='main-form'>
             <div style={{display:'flex', justifyContent:'center'}}>
-                <Avatar color="cyan"  size="xl" radius="xl"/>
+                <Avatar color="cyan" src={person} size="xl" radius="xl"/>
             </div>
             <div style={{display:'flex', justifyContent:'center'}}>
                 <Chip defaultChecked variant="outline" size="xl">Bienvenido Alex!</Chip>
@@ -19,10 +20,10 @@ function FormSix() {
                     Una tarjeta pensada para ti 🔥
                 </Notification>
                 <div onClick={()=>navigate('/plan-de-pagos')}>
-                <BlockNotify name="Nro de Credito : 156151321" title="Credito Hipotecario" detail="Saldo: 450000 Bs"/>
+                <BlockNotify name="Nro de Credito : 156151321" title="Crédito Hipotecario" detail="Saldo: 450000 Bs"/>
                 </div>
                 <div onClick={()=>navigate('/plan-de-pagos')}>
-                <BlockNotify name="Nro de Credito : 152132215" title="Credito Vehicular" detail="Saldo: 70000 USD"/>
+                <BlockNotify name="Nro de Credito : 152132215" title="Crédito Vehicular" detail="Saldo: 70000 Bs"/>
                 </div>
             </div>
         </div>
