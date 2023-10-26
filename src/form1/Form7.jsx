@@ -25,7 +25,7 @@ function FormSeven() {
                     <Chip defaultChecked variant="outline" size="xl">Bienvenido Alex!</Chip>
 
                 </div>
-                <InputForm name="Monto Desembolsado [Bs]:" money='45000'/>
+                <InputForm name="Monto Desembolsado [Bs]:" money='450000'/>
                 <InputForm name="Nro. De cuotas pagadas:" money='15'/>
                 <InputForm name="Nro. De cuotas por pagar:" money='20'/>
                 <InputForm name="Saldo Adeudado [Bs]:" money='20000'/>

@@ -33,7 +33,6 @@ function FormTwo() {
                     <Modal opened={opened} onClose={close} title="Agendar Reunión"  centered size="70%" >
                     <Image
                         radius="md"
-                        h={600}
                         src={agenda}
                     />
                     </Modal>
